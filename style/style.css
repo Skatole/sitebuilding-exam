@@ -46,3 +46,33 @@ body {
   font-family: sans-serif;
   font-size: 14px;
 }
+
+.img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px 100px;
+}
+
+.img:nth-last-of-type(1) {
+  grid-row-start: 1;
+}
+
+.img:nth-last-of-type(2) {
+  grid-column-start: 5;
+  grid-row-start: 1;
+}
+
+.img:nth-last-of-type(3) {
+  grid-row-start: 1;
+  grid-column-start: 5;
+}
+
+.img:nth-last-of-type(4) {
+  grid-row-start: 5;
+  grid-column-start: 5;
+}
+
+.img:nth-last-of-type(5) {
+  grid-row-start: 1;
+  grid-row-start: 2;
+}
